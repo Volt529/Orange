@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Erreur serveur</title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/logo.png' %}" />
+</head>
+<body>
+    <div id="layoutDefault">
+        <div id="layoutDefault_content">
+            <main>
+                <div class="container px-5 py-5 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h1 class="page-header-ui-title mb-3 display-1">500</h1>
+                            <h2 class="page-header-ui-title mb-3 display-6">Erreur serveur</h2>
+                            <p class="lead">Une erreur s'est produite sur le serveur. Nos équipes ont été notifiées et travaillent à résoudre le problème.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-5 py-5 text-center">
+                    <div class="justify-content-center">
+                        <a class="btn fw-500 ms-lg-4 btn-primary px-10" href="/">
+                            Retour à l'accueil
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
