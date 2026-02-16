@@ -11,10 +11,3 @@ sphinx:
 python:
   install:
     - requirements: requirements.txt
-```
-
-### Étape 2 : Ajoute `_build` au `.gitignore`
-
-Ajoute cette ligne dans `.gitignore` :
-```
-docs/_build/
