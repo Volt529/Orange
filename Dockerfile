@@ -20,5 +20,6 @@ EXPOSE 8000
 
 # Migrations + création auto du superuser + démarrage
 CMD python manage.py migrate && \
+    python manage.py loaddata fixtures/fixtures.json && \
     python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.filter(username='admin').exists() or User.objects.create_superuser('admin', 'admin@oclettings.com', 'Abc1234!')" && \
     gunicorn oc_lettings_site.wsgi:application --bind 0.0.0.0:8000
