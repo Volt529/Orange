@@ -9,7 +9,7 @@ class HomeViewTest(TestCase):
         """Teste la vue d'accueil."""
         response = self.client.get(reverse('index'))
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, 'Welcome to Holiday Homes')
+        self.assertContains(response, 'Welcome to Holiday Home')
 
     def test_home_view_template(self):
         """Teste que le bon template est utilisé."""
