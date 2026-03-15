@@ -121,7 +121,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "static",]
 
-SENTRY_DSN = os.environ.get('SENTRY_DSN', '')
+SENTRY_DSN = config('SENTRY_DSN', default='')
 
 if SENTRY_DSN:
     sentry_sdk.init(
